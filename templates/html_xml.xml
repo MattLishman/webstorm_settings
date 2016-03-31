@@ -1,0 +1,9 @@
+<templateSet group="html/xml">
+  <template name="xmlv1" value="&lt;?xml version=&quot;1.0&quot;?&gt;" description="xml version 1 tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

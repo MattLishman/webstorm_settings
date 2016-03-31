@@ -1,0 +1,39 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding">
+        <file url="PROJECT" charset="UTF-8" />
+      </component>
+      <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+        <OptionsSetting value="true" id="Add" />
+        <OptionsSetting value="true" id="Remove" />
+        <OptionsSetting value="true" id="Checkout" />
+        <OptionsSetting value="true" id="Update" />
+        <OptionsSetting value="true" id="Status" />
+        <OptionsSetting value="true" id="Edit" />
+        <ConfirmationsSetting value="0" id="Add" />
+        <ConfirmationsSetting value="0" id="Remove" />
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="gitflow.GitflowConfigurable" />
+        <property name="settings.editor.splitter.proportion" value="0.2" />
+        <property name="last_opened_file_path" value="/ampersand/checkouts" />
+        <property name="Gitflow.featureFetchOrigin" value="true" />
+        <property name="Gitflow.featureKeepRemote" value="true" />
+        <property name="Gitflow.releaseFetchOrigin" value="true" />
+        <property name="Gitflow.pushOnFinishRelease" value="true" />
+        <property name="Gitflow.dontTagRelease" value="false" />
+        <property name="Gitflow.useCustomTagCommitMessage" value="false" />
+        <property name="Gitflow.customTagCommitMessage" value="Tagging version %name%" />
+        <property name="Gitflow.hotfixFetchOrigin" value="true" />
+        <property name="Gitflow.pushOnFinishHotfix" value="true" />
+        <property name="Gitflow.dontTagHotfix" value="false" />
+        <property name="Gitflow.useCustomHotfixTagCommitMessage" value="false" />
+        <property name="Gitflow.customHotfixTagCommitMessage" value="Tagging version %name%" />
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

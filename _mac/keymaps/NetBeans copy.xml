@@ -1,0 +1,9 @@
+<keymap version="1" name="NetBeans copy" parent="NetBeans 6.5">
+  <action id="Git.Branches">
+    <keyboard-shortcut first-keystroke="ctrl b" />
+  </action>
+  <action id="GotoDeclaration">
+    <mouse-shortcut keystroke="control button1" />
+    <mouse-shortcut keystroke="button2" />
+  </action>
+</keymap>

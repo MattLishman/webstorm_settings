@@ -1,0 +1,11 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <extensionMap>
+      <mapping pattern="0" type="PLAIN_TEXT" />
+      <mapping pattern="Google_Analytics_Layout" type="XML" />
+      <mapping pattern="Ampersand_layout" type="XML" />
+      <mapping pattern="Ampersand_ConvertDobToMinutes" type="XML" />
+      <mapping pattern="config.xml" type="XML" />
+    </extensionMap>
+  </component>
+</application>

@@ -1,0 +1,41 @@
+<templateSet group="AngularJS ">
+  <template name="ngc" value="(function(){  &#10;    angular.module('$moduleName$').controller('$controllerNameString$Ctrl', $controllerName$Ctrl);&#10;    &#10;    $controllerName$Ctrl.$inject = ['$injectables$'];&#10;    &#10;    function $controllerName$Ctrl($injectables$) {&#10;        $END$&#10;    } &#10;})();" description="Define a new Angular Controller. You can change the controller name and parameters." toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="snowball" alwaysStopAt="true" />
+    <variable name="controllerNameString" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="nginject" value="$controllerName$.$inject = $inject$" description="Controller injection property" toReformat="false" toShortenFQNames="true">
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngf" value="(function(){&#10;    angular.module('$ModuleName$').factory('$factoryName$', $factoryName$);&#10;    &#10;    $factoryName$.$inject = ['$injectables1$', '$injectables2$', '$injectables3$', '$injectables4$'];&#10;    &#10;    function $factoryName$($injectables1$, $injectables2$, $injectables3$, $injectables4$){&#10;        $END$&#10;    }&#10;})();" description="Angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="ModuleName" expression="" defaultValue="snowball" alwaysStopAt="true" />
+    <variable name="factoryName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bpromise" value="var deferred = $q.defer();&#10;deferred.resolve();&#10;return deferred.promise;" description="A blank promise" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
