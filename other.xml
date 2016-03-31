@@ -63,8 +63,13 @@
     <option name="SEND_ENVIRONMENT_VARIABLES_TO_SERVER" value="false" />
     <option name="SHOW_PATH" value="true" />
   </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node" excluded="true" />
+    <local-interpreter path="/opt/boxen/nodenv/shims/node" excluded="true" />
+    <local-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" excluded="true" />
+  </component>
   <component name="NodeLocalInterpreterManager">
-    <node-interpreter path="/usr/local/bin/node" version="4.2.1" last-modified="1444786659000" />
-    <node-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" version="4.2.1" last-modified="1444786659000" />
+    <node-interpreter path="/usr/local/bin/node" version="(Does not exist)" last-modified="1459417608924" />
+    <node-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" version="(Does not exist)" last-modified="1459417608924" />
   </component>
 </application>
