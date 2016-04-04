@@ -1,0 +1,21 @@
+<templateSet group="Custom Angular">
+  <template name="ngc" value="dfs" description="Angular controller" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngf" value="(function () {&#10;    angular.module($MODULE$).factory('$name$', $name$);&#10;&#10;    $name$.$inject = ['$inject$'];&#10;&#10;    function $name$($inject$) {&#10;        $END$&#10;    }&#10;})();&#10;" description="Angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
