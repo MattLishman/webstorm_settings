@@ -125,4 +125,14 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="spybpromise" value="jasmine.createSpy('$spyName$').and.callFake(function(){&#10;    var deferred = $q.defer();&#10;    deferred.resolve();&#10;    return deferred.promise;&#10;});" description="Create a spy with a blank promise" toReformat="true" toShortenFQNames="true">
+    <variable name="spyName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
