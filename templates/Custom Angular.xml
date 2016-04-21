@@ -38,4 +38,19 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="ngd" value="(function () {&#10;    angular.module('$module$').directive('$name$', $function$);&#10;&#10;    function $function$() {&#10;        return {&#10;            restrict: 'E',&#10;            scope: {},&#10;            templateUrl: '/app/$template$',&#10;            bindToController: {&#10;                $bind$: '$to$'&#10;            },&#10;            controller: $controller$,&#10;            controllerAs: 'vm'&#10;        };&#10;    }&#10;})();&#10;" description="Amgular directive" toReformat="true" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bind" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="to" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
