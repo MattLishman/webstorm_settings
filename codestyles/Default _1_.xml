@@ -4,6 +4,9 @@
   <MultiMarkdownCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
   </MultiMarkdownCodeStyleSettings>
+  <TypeScriptCodeStyleSettings>
+    <option name="SPACE_AFTER_TYPE_COLON" value="true" />
+  </TypeScriptCodeStyleSettings>
   <XML>
     <option name="XML_TEXT_WRAP" value="0" />
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
