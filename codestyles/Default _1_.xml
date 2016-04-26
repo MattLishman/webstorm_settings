@@ -11,6 +11,11 @@
     <option name="XML_TEXT_WRAP" value="0" />
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
   </XML>
+  <codeStyleSettings language="JSON">
+    <indentOptions>
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="JavaScript">
     <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
     <option name="IF_BRACE_FORCE" value="3" />
