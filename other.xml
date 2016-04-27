@@ -69,7 +69,7 @@
     <local-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" excluded="true" />
   </component>
   <component name="NodeLocalInterpreterManager">
-    <node-interpreter path="/usr/local/bin/node" version="(Does not exist)" last-modified="1461663246008" />
-    <node-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" version="(Does not exist)" last-modified="1461663246008" />
+    <node-interpreter path="/usr/local/bin/node" version="4.4.3" last-modified="1460489620000" />
+    <node-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" version="(Does not exist)" last-modified="1461744771084" />
   </component>
 </application>
