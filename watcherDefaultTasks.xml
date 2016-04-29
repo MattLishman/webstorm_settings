@@ -1,6 +1,6 @@
 <application>
   <component name="ApplicationTasksOptions">
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$/source/app/.generated/css/$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" value="Compiles .scss files into .css files" />
