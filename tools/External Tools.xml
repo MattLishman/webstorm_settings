@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="TypeScript" description="Run TypeScript" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/src/snowball/frontend/node_modules/.bin/tsc " />
+      <option name="PARAMETERS" value="--noEmit" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/src/snowball/frontend" />
+    </exec>
+  </tool>
+</toolSet>
