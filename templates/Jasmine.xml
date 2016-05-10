@@ -19,7 +19,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="describe" value="describe('$DESCRIPTION$', function () {&#10;    beforeEach(function(){&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', function () {&#10;        $END$&#10;    });&#10;});" description="Expand the description" toReformat="true" toShortenFQNames="true">
+  <template name="describe" value="describe('$DESCRIPTION$', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="Expand the description" toReformat="true" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SHOULD" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BEFORE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -28,6 +28,7 @@
       <option name="JS_EXPRESSION" value="true" />
       <option name="JSX_HTML" value="true" />
       <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="be" value="beforeEach(function(){&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
