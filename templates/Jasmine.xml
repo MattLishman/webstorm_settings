@@ -31,7 +31,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="be" value="beforeEach(function(){&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
+  <template name="be" value="beforeEach(() =&gt; {&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
