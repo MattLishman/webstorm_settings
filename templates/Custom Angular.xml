@@ -1,6 +1,5 @@
 <templateSet group="Custom Angular">
-  <template name="ngc" value="(function () {&#10;    angular.module('$module$').controller('$controller$', $controller$);&#10;&#10;    $controller$.$inject = ['$dependency$'];&#10;&#10;    function $controller$($dependency$) {&#10;    &#10;        var vm = this;&#10;        &#10;        $END$&#10;    }&#10;})();&#10;" description="Angular controller" toReformat="true" toShortenFQNames="true">
-    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ngc" value="export class $controller$ {&#10;&#10;    static $inject = ['$dependency$'];&#10;&#10;    constructor(private $dependency$) {&#10;        $END$&#10;    }&#10;}&#10;" description="Angular controller" toReformat="true" toShortenFQNames="true">
     <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -10,9 +9,8 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ngf" value="(function () {&#10;    angular.module($MODULE$).factory('$name$', $name$);&#10;&#10;    $name$.$inject = ['$inject$'];&#10;&#10;    function $name$($inject$) {&#10;        $END$&#10;    }&#10;})();&#10;" description="Angular factory" toReformat="true" toShortenFQNames="true">
-    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ngf" value="export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}&#10;" description="Angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
