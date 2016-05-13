@@ -53,4 +53,8 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="ngm" value="const module: ng.IModule  = angular.module('$module$', []);&#10;&#10;export {module};&#10;" description="Angular module" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
 </templateSet>
