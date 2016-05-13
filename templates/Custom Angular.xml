@@ -19,7 +19,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name=".then" value=".then(function($return$){&#10;    $END$&#10;})" description="Expand a .then()" toReformat="true" toShortenFQNames="true">
+  <template name=".then" value=".then(($return$) =&gt; {&#10;    $END$&#10;})" description="Expand a .then()" toReformat="true" toShortenFQNames="true">
     <variable name="return" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
