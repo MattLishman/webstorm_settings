@@ -1,7 +1,6 @@
 <application>
   <component name="ScratchFileService">
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch" value="XML" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_33" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_34" value="TypeScript" />
@@ -18,13 +17,5 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_45" value="HTML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_46" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_47" value="JavaScript" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_48" value="SCSS" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_49" value="HTML" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_50" value="HTML" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_51" value="TEXT" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_52" value="TypeScript" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_53" value="JavaScript" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_54" value="JSON" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_55" value="JavaScript" />
   </component>
 </application>
