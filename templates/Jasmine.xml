@@ -1,5 +1,5 @@
 <templateSet group="Jasmine">
-  <template name="it" value="it('$DESCRIPTION$', function(){&#10;    $END$&#10;});" description="Shorthand it" toReformat="true" toShortenFQNames="true">
+  <template name="it" value="it('$DESCRIPTION$', () =&gt; {&#10;    $END$&#10;});" description="Shorthand it" toReformat="true" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -19,7 +19,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="describe" value="describe('$DESCRIPTION$', function () {&#10;    beforeEach(function(){&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', function () {&#10;        $END$&#10;    });&#10;});" description="Expand the description" toReformat="true" toShortenFQNames="true">
+  <template name="describe" value="describe('$DESCRIPTION$', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="Expand the description" toReformat="true" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SHOULD" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BEFORE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -28,9 +28,10 @@
       <option name="JS_EXPRESSION" value="true" />
       <option name="JSX_HTML" value="true" />
       <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="be" value="beforeEach(function(){&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
+  <template name="be" value="beforeEach(() =&gt; {&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
@@ -99,12 +100,37 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="unitcontroller" value="fdescribe('$ctrl$', function () {&#10;&#10;    //Injected globals&#10;    var $rootScope, $controller;&#10;&#10;    beforeEach(module('$module$'));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject(function (_$rootScope_, _$controller_) {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;&#10;    }));&#10;&#10;    describe('When initialised', function () {&#10;    &#10;        var vm;&#10;&#10;        it('should $it$', function () {&#10;&#10;            vm = $controller('$ctrl$', {&#10;                $Inject$: $Inject$&#10;            });&#10;            $END$&#10;        });&#10;    });&#10;});" description="Unit test defaults for a controller" toReformat="true" toShortenFQNames="true">
+  <template name="unitcontroller" value="describe('$ctrl$', () =&gt; {&#10;&#10;    // Injected globals&#10;    let $rootScope, $controller, $q;&#10;    &#10;    // Defaults&#10;    let $Inject$;&#10;&#10;    beforeEach(angular.mock.module('$module$'));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject((_$rootScope_, _$controller_, _$q_) =&gt; {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;        $q = _$q_;&#10;&#10;        // Defaults &#10;        $Inject$ = $END$&#10;    }));&#10;&#10;    describe('When initialised', () =&gt; {&#10;    &#10;        let vm;&#10;&#10;        it('should $it$', () =&gt; {&#10;&#10;            vm = $controller('$ctrl$', {&#10;                $Inject$: $Inject$,&#10;            });&#10;        });&#10;    });&#10;});" description="Unit test defaults for a controller" toReformat="true" toShortenFQNames="true">
     <variable name="ctrl" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="" defaultValue="app" alwaysStopAt="true" />
     <variable name="it" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="unitservice" value="describe('$service$', function () {&#10;&#10;    var $serviceVariable$;&#10;    &#10;    //Dependencies&#10;    var $dependencies$;&#10;    &#10;    beforeEach(module('$module$'));&#10;    &#10;    beforeEach(module(function($provide) {&#10;    &#10;        $dependencies$ = $dependencyValue$;&#10;    &#10;        $provide.value('$dependencies$', $dependencies$);&#10;    }));&#10;    &#10;    beforeEach(inject(function($injector){&#10;        $serviceVariable$ = $injector.get('$serviceVariable$');&#10;    }));&#10;&#10;    describe('$testMethod$', function () {&#10;        beforeEach(function () {&#10;&#10;        });&#10;&#10;        it('$itShould$', function () {&#10;&#10;        });&#10;    });&#10;&#10;});&#10;" description="Unit test defaults for a service" toReformat="true" toShortenFQNames="true">
+    <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="serviceVariable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependencies" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependencyValue" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="testMethod" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="itShould" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="spybpromise" value="jasmine.createSpy('$spyName$').and.callFake(function(){&#10;    var deferred = $q.defer();&#10;    deferred.resolve();&#10;    return deferred.promise;&#10;});" description="Create a spy with a blank promise" toReformat="true" toShortenFQNames="true">
+    <variable name="spyName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
       <option name="JSX_HTML" value="true" />

@@ -1,0 +1,10 @@
+<templateSet group="node">
+  <template name="gulpconfig" value="var gulp = require('gulp');&#10;var config = require('./config');" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

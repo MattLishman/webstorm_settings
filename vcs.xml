@@ -55,6 +55,6 @@
     <option name="cloneParentDir" value="$USER_HOME$/src/snowball" />
   </component>
   <component name="VcsApplicationSettings">
-    <option name="PATCH_STORAGE_LOCATION" value="/ampersand/checkouts/harveys/.idea/shelf" />
+    <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$" />
   </component>
 </application>
