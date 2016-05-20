@@ -70,6 +70,6 @@
   </component>
   <component name="NodeLocalInterpreterManager">
     <node-interpreter path="/usr/local/bin/node" version="4.4.3" last-modified="1460489620000" />
-    <node-interpreter path="/usr/local/Cellar/node/4.2.1/bin/node" version="(Does not exist)" last-modified="1463140840323" />
+    <node-interpreter path="/opt/boxen/nodenv/shims/node" version="4.0.0" last-modified="1449749494000" />
   </component>
 </application>
