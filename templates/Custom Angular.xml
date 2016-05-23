@@ -1,5 +1,5 @@
 <templateSet group="Custom Angular">
-  <template name="ngc" value="export class $controller$ {&#10;&#10;    static $inject = ['$dependency$'];&#10;&#10;    constructor(private $dependency$) {&#10;        $END$&#10;    }&#10;}&#10;" description="Angular controller" toReformat="true" toShortenFQNames="true">
+  <template name="ngc" value="import {module} from './$modulePath';&#10;&#10;export class $controller$ {&#10;&#10;    static $inject = ['$dependency$'];&#10;&#10;    constructor(private $dependency$) {&#10;        $END$&#10;    }&#10;}&#10;&#10;module.controller('$controller$', $controller$);" description="Angular controller" toReformat="true" toShortenFQNames="true">
     <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -9,7 +9,8 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ngf" value="export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}&#10;" description="Angular factory" toReformat="true" toShortenFQNames="true">
+  <template name="ngs" value="import {module} from './$modulePath$';&#10;&#10;export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}&#10;&#10;module.service('$service$', $service$);&#10;" description="Angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -53,6 +54,20 @@
   </template>
   <template name="ngm" value="const module: ng.IModule  = angular.module('$module$', []);&#10;&#10;export {module};&#10;" description="Angular module" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngr" value="import {module} from './$module$';&#10;import {$controller$} from './$controller$.controller';&#10;&#10;let states = [&#10;    {&#10;        state: '$stateName$',&#10;        config: {&#10;            url: '/$url$',&#10;            controller: '$controller$Ctrl',&#10;            controllerAs: 'vm',&#10;            templateUrl: '/app/$template$.template.html',&#10;        },&#10;    },&#10;];&#10;&#10;module.run(['routerHelper', (routerHelper) =&gt; {&#10;    routerHelper.configureStates(states);&#10;}]);&#10;" description="Angular router" toReformat="true" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stateName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
