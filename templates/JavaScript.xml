@@ -37,4 +37,15 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="importf" value="import {$moduleName$} from '$modulePath$';" description="TypeScript import from" toReformat="true" toShortenFQNames="true">
+    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
