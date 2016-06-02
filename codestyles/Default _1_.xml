@@ -1,5 +1,6 @@
 <code_scheme name="Default (1)">
   <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,body,thead,tfoot" />
+  <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea,span" />
   <option name="HTML_INLINE_ELEMENTS" value="abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,kbd,label,q,s,samp,select,strike,strong,sub,sup,textarea,tt,u,var,span" />
   <MultiMarkdownCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
