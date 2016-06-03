@@ -49,7 +49,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="if" value="if($SOMETHING$ $IS$ $SOMETHINGELSE$){&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="if" value="if ($SOMETHING$ $IS$ $SOMETHINGELSE$){&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="SOMETHING" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="IS" expression="" defaultValue="===" alwaysStopAt="true" />
     <variable name="SOMETHINGELSE" expression="" defaultValue="" alwaysStopAt="true" />
