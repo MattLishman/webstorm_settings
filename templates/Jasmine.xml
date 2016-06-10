@@ -60,12 +60,10 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="fdescribe" value="fdescribe('$testName$', function(){&#10;    describe('$DESCRIPTION$', function () {&#10;        beforeEach($inject$function(){&#10;        $BEFORE$&#10;        })$injectend$;&#10;    &#10;        it('$SHOULD$', function () {&#10;            $END$&#10;        });&#10;    });&#10;});" description="First Describe function" toReformat="true" toShortenFQNames="true">
+  <template name="fdescribe" value="fdescribe('$testName$',() =&gt; {&#10;    describe('$DESCRIPTION$', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', () =&gt; {&#10;        $END$&#10;    });&#10;});&#10;});" description="First Describe function" toReformat="true" toShortenFQNames="true">
     <variable name="testName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="inject" expression="" defaultValue="inject(" alwaysStopAt="true" />
     <variable name="BEFORE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="injectend" expression="" defaultValue=")" alwaysStopAt="true" />
     <variable name="SHOULD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -100,7 +98,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="unitcontroller" value="import {$module$} from './$modulePath$';&#10;&#10;describe('$ctrl$', () =&gt; {&#10;&#10;    // Injected globals&#10;    let $rootScope, $controller, $q;&#10;    &#10;    // Defaults&#10;    let $Inject$;&#10;&#10;    beforeEach(angular.mock.module($module$.name));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject((_$rootScope_, _$controller_, _$q_) =&gt; {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;        $q = _$q_;&#10;&#10;        // Defaults &#10;        $Inject$ = $END$&#10;    }));&#10;&#10;    describe('When initialised', () =&gt; {&#10;    &#10;        let vm;&#10;&#10;        it('should $it$', () =&gt; {&#10;&#10;            vm = $controller('$ctrl$', {&#10;                $Inject$: $Inject$,&#10;            });&#10;        });&#10;    });&#10;});" description="Unit test defaults for a controller" toReformat="true" toShortenFQNames="true">
+  <template name="unitcontroller" value="import {$module$} from './$modulePath$';&#10;&#10;describe('$ctrl$', () =&gt; {&#10;&#10;        // Injected globals&#10;    let $rootScope: ng.IRootScopeService,&#10;        $controller: ng.IControllerService,&#10;        $q: ng.IQService;&#10;    &#10;    // Defaults&#10;    let $Inject$;&#10;&#10;    beforeEach(angular.mock.module($module$.name));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject((_$rootScope_, _$controller_, _$q_) =&gt; {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;        $q = _$q_;&#10;&#10;        // Defaults &#10;        $Inject$ = $END$&#10;    }));&#10;&#10;    describe('When initialised', () =&gt; {&#10;    &#10;        let vm;&#10;&#10;        it('should $it$', () =&gt; {&#10;&#10;            vm = $controller('$ctrl$', {&#10;                $Inject$: $Inject$,&#10;            });&#10;        });&#10;    });&#10;});" description="Unit test defaults for a controller" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="app" alwaysStopAt="true" />
     <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ctrl" expression="" defaultValue="" alwaysStopAt="true" />
