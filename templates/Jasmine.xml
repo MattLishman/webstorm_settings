@@ -111,11 +111,11 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="unitservice" value="import {$module$} from './$modulePath$';&#10;import {$servicename$} from './$service$';&#10;&#10;describe('$service$', () =&gt; {&#10;&#10;    let $serviceVariable$;&#10;    &#10;    // Dependencies&#10;    let $dependencies$;&#10;    &#10;    beforeEach(angular.mock.module($module$.name));&#10;    &#10;    beforeEach(angular.mock.module(($provide) =&gt; {&#10;    &#10;        $dependencies$ = $dependencyValue$;&#10;    &#10;        $provide.value('$dependencies$', $dependencies$);&#10;    }));&#10;    &#10;    beforeEach(inject(($injector) =&gt; {&#10;        $serviceVariable$ = $injector.get('$serviceVariable$');&#10;    }));&#10;&#10;    describe('$testMethod$', () =&gt; {&#10;        beforeEach(() =&gt; {&#10;&#10;        });&#10;&#10;        it('$itShould$', () =&gt; {&#10;&#10;        });&#10;    });&#10;&#10;});&#10;" description="Unit test defaults for a service" toReformat="true" toShortenFQNames="true">
-    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="unitservice" value="import {module as $moduleName$} from './$modulePath$';&#10;import {$servicename$} from './$service$';&#10;&#10;describe('$service$', () =&gt; {&#10;&#10;    let $serviceVariable$: $servicename$;&#10;    &#10;    // Dependencies&#10;    let $dependencies$;&#10;    &#10;    beforeEach(angular.mock.module($moduleName$.name));&#10;    &#10;    beforeEach(angular.mock.module(($provide) =&gt; {&#10;    &#10;        $dependencies$ = $dependencyValue$;&#10;    &#10;        $provide.value('$dependencies$', $dependencies$);&#10;    }));&#10;    &#10;    beforeEach(inject(($injector) =&gt; {&#10;        $serviceVariable$ = $injector.get('$serviceVariable$');&#10;    }));&#10;&#10;    describe('$testMethod$', () =&gt; {&#10;        beforeEach(() =&gt; {&#10;&#10;        });&#10;&#10;        it('$itShould$', () =&gt; {&#10;&#10;        });&#10;    });&#10;&#10;});&#10;" description="Unit test defaults for a service" toReformat="true" toShortenFQNames="true">
     <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="servicename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="servicename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="dependencies" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="serviceVariable" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="dependencyValue" expression="" defaultValue="" alwaysStopAt="true" />
