@@ -1,13 +1,4 @@
 <templateSet group="AngularJS ">
-  <template name="bpromise" value="let deferred = $q.defer();&#10;deferred.resolve($resolve$);&#10;return deferred.promise;" description="A blank promise the resolves" toReformat="true" toShortenFQNames="true">
-    <variable name="resolve" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
-    </context>
-  </template>
   <template name="ngm" value="angular.module('$moduleName$',[$moduleDependencies$]);&#10;$END$" description="A new angular module without a config function." toReformat="true" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="moduleDependencies" expression="" defaultValue="" alwaysStopAt="true" />
