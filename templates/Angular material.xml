@@ -1,5 +1,5 @@
 <templateSet group="Angular material">
-  <template name="lay" value="layout=&quot;$layout$&quot; layout-align&quot;$first$ $second$&quot;" description="Layout" toReformat="true" toShortenFQNames="true">
+  <template name="lay" value="layout=&quot;$layout$&quot; layout-align=&quot;$first$ $second$&quot;" description="Layout" toReformat="true" toShortenFQNames="true">
     <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="first" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="second" expression="" defaultValue="" alwaysStopAt="true" />
