@@ -39,14 +39,15 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ngd" value="(function () {&#10;    angular.module('$module$').directive('$name$', $function$);&#10;&#10;    function $function$() {&#10;        return {&#10;            restrict: 'E',&#10;            scope: {},&#10;            templateUrl: '/app/$template$',&#10;            bindToController: {&#10;                $bind$: '$to$'&#10;            },&#10;            controller: $controller$,&#10;            controllerAs: 'vm'&#10;        };&#10;    }&#10;})();&#10;" description="Amgular directive" toReformat="true" toShortenFQNames="true">
-    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ngd" value="import {module as $moduleName$} from '$modulePath$';&#10;&#10;function $function$() {&#10;    return {&#10;        restrict: 'E',&#10;        scope: {},&#10;        templateUrl: '/app/$template$',&#10;        bindToController: {&#10;            $bind$: '$to$'&#10;        },&#10;        controller: $controller$,&#10;        controllerAs: 'vm'&#10;    };&#10;}&#10;&#10;$moduleName$.directive('$name$', $function$);&#10;" description="Amgular directive" toReformat="true" toShortenFQNames="true">
+    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="bind" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="to" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
@@ -86,6 +87,22 @@
       <option name="JS_EXPRESSION" value="true" />
       <option name="JSX_HTML" value="true" />
       <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngcomp" value="import {module as $moduleName$} from '$modulePath$';&#10;import {$controller$} from '$controllerPath$' &#10;&#10;let $componentName$ = {&#10;    templateUrl: '$templateUrl$',&#10;    controller: $controller$,&#10;    controllerAs: 'vm',&#10;    bindings: {&#10;        $binding$: '=',&#10;    },&#10;};&#10;&#10;export $componentName$;&#10;&#10;$moduleName$.component('$componentName$', $componentName$);" description="Angular component" toReformat="true" toShortenFQNames="true">
+    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerPath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="templateUrl" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="binding" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>
