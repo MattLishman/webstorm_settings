@@ -89,7 +89,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ngcomp" value="import {module as $moduleName$} from '$modulePath$';&#10;import {$controller$} from '$controllerPath$' &#10;&#10;let $componentName$Component: ng.IComponentOptions = {&#10;    templateUrl: '$templateUrl$',&#10;    controller: $controller$,&#10;    controllerAs: 'vm',&#10;    bindings: {&#10;        $binding$: '=',&#10;    },&#10;};&#10;&#10;export {$componentName$};&#10;&#10;$moduleName$.component('$componentName$', $componentName$Component);" description="Angular component" toReformat="true" toShortenFQNames="true">
+  <template name="ngcomp" value="import {module as $moduleName$} from '$modulePath$';&#10;import {$controller$} from '$controllerPath$' &#10;&#10;let $componentName$Component: ng.IComponentOptions = {&#10;    templateUrl: '$templateUrl$',&#10;    controller: $controller$,&#10;    controllerAs: 'vm',&#10;    bindings: {&#10;        $binding$: '=',&#10;    },&#10;};&#10;&#10;export {$componentName$};&#10;&#10;$moduleName$.component('snow$componentName$', $componentName$Component);" description="Angular component" toReformat="true" toShortenFQNames="true">
     <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controllerPath" expression="" defaultValue="" alwaysStopAt="true" />
