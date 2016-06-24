@@ -48,4 +48,15 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="exportf" value="export {$export$} from '$exportPath$';" description="Export from" toReformat="true" toShortenFQNames="true">
+    <variable name="exportPath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="export" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
