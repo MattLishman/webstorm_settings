@@ -6,9 +6,6 @@
     <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="ngs" value="import {module as $moduleName$} from './$modulePath$';&#10;&#10;export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}&#10;&#10;$moduleName$.service('$service$', $service$);&#10;" description="Angular service" toReformat="true" toShortenFQNames="true">
@@ -18,26 +15,17 @@
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name=".then" value=".then(($return$) =&gt; {&#10;    $END$&#10;})" description="Expand a .then()" toReformat="true" toShortenFQNames="true">
     <variable name="return" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="apply" value="$rootScope.$apply();" description="$rootScope.$apply();" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="ngd" value="import {module as $moduleName$} from '$modulePath$';&#10;&#10;function $function$() {&#10;    return {&#10;        restrict: 'E',&#10;        scope: {},&#10;        templateUrl: '/app/$template$',&#10;        bindToController: {&#10;            $bind$: '$to$'&#10;        },&#10;        controller: $controller$,&#10;        controllerAs: 'vm'&#10;    };&#10;}&#10;&#10;$moduleName$.directive('$name$', $function$);&#10;" description="Amgular directive" toReformat="true" toShortenFQNames="true">
@@ -51,18 +39,12 @@
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="ngm" value="const module: ng.IModule  = angular.module('$module$', []);&#10;&#10;export {module};&#10;" description="Angular module" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
@@ -76,18 +58,12 @@
     <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="bpromise" value="let deferred = $q.defer();&#10;deferred.resolve($END$);&#10;return deferred.promise;" description="A blank promise the resolves" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="ngcomp" value="import {module as $moduleName$} from '$modulePath$';&#10;import {$controller$} from '$controllerPath$';&#10;&#10;let $componentName$Component: ng.IComponentOptions = {&#10;    templateUrl: '$templateUrl$',&#10;    controller: $controller$,&#10;    controllerAs: 'vm',&#10;    bindings: {&#10;        $binding$: '=',&#10;    },&#10;};&#10;&#10;$moduleName$.component('snow$componentName$', $componentName$Component);&#10;&#10;export {$componentName$Component};&#10;" description="Angular component" toReformat="true" toShortenFQNames="true">
@@ -100,9 +76,6 @@
     <variable name="binding" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>

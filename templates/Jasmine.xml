@@ -3,9 +3,6 @@
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="expect" value="expect($SOMETHING$).to$BE$($BEWHAT$);$END$" toReformat="false" toShortenFQNames="true">
@@ -14,9 +11,6 @@
     <variable name="BEWHAT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="describe" value="describe('$DESCRIPTION$', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="Expand the description" toReformat="true" toShortenFQNames="true">
@@ -25,18 +19,12 @@
     <variable name="BEFORE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="be" value="beforeEach(() =&gt; {&#10;    $END$&#10;});" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="spy" value="spyOn($obj$, '$method$')$END$;" toReformat="true" toShortenFQNames="true">
@@ -44,9 +32,6 @@
     <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="if" value="if ($SOMETHING$ $IS$ $SOMETHINGELSE$){&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
@@ -55,9 +40,6 @@
     <variable name="SOMETHINGELSE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="fdescribe" value="fdescribe('$testName$',() =&gt; {&#10;    describe('$DESCRIPTION$', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;    $BEFORE$&#10;    });&#10;&#10;    it('$SHOULD$', () =&gt; {&#10;        $END$&#10;    });&#10;});&#10;});" description="First Describe function" toReformat="true" toShortenFQNames="true">
@@ -67,35 +49,23 @@
     <variable name="SHOULD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="beiu" value="beforeEach(inject(function(_$$$inject$_){&#10;    $END$&#10;}));" description="Before Each with injector with underscore." toReformat="true" toShortenFQNames="true">
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="bei" value="beforeEach(inject(function($$$inject$){&#10;    $END$&#10;}));" description="Before each with injector" toReformat="true" toShortenFQNames="true">
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="ae" value="afterEach(function(){&#10;    $END$&#10;})" description="After Each" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="unitcontroller" value="import './index';&#10;import {module as $moduleName$} from './$modulePath$';&#10;import {$ctrl$} from './$controllerPath$';&#10;&#10;describe('$ctrl$', () =&gt; {&#10;&#10;        // Injected globals&#10;    let $rootScope: ng.IRootScopeService,&#10;        $controller: ng.IControllerService,&#10;        $q: ng.IQService;&#10;    &#10;    // Defaults&#10;    let $Inject$;&#10;&#10;    beforeEach(angular.mock.module($moduleName$.name));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject((_$rootScope_, _$controller_, _$q_) =&gt; {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;        $q = _$q_;&#10;&#10;        // Defaults &#10;        $Inject$ = $END$&#10;    }));&#10;&#10;    describe('When initialised', () =&gt; {&#10;    &#10;        let vm: ctrl;&#10;&#10;        it('should $it$', () =&gt; {&#10;&#10;            vm = $controller($ctrl$, {&#10;                $Inject$,&#10;            });&#10;        });&#10;    });&#10;});" description="Unit test defaults for a controller" toReformat="true" toShortenFQNames="true">
@@ -107,9 +77,6 @@
     <variable name="Inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="unitservice" value="import {module as $moduleName$} from './$modulePath$';&#10;import {$servicename$} from './$servicePath$';&#10;&#10;describe('$servicename$', () =&gt; {&#10;&#10;    let $servicename$: $servicename$;&#10;    &#10;    // Dependencies&#10;    let $dependencies$;&#10;    &#10;    beforeEach(angular.mock.module($moduleName$.name));&#10;    &#10;    beforeEach(angular.mock.module(($provide) =&gt; {&#10;    &#10;        $dependencies$ = $dependencyValue$;&#10;    &#10;        $provide.value('$dependencies$', $dependencies$);&#10;    }));&#10;    &#10;    beforeEach(inject(($injector) =&gt; {&#10;        $servicename$ = $injector.get('$servicename$');&#10;    }));&#10;&#10;    describe('$testMethod$', () =&gt; {&#10;        beforeEach(() =&gt; {&#10;&#10;        });&#10;&#10;        it('$itShould$', () =&gt; {&#10;&#10;        });&#10;    });&#10;&#10;});&#10;" description="Unit test defaults for a service" toReformat="true" toShortenFQNames="true">
@@ -123,19 +90,12 @@
     <variable name="itShould" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="spybpromise" value="jasmine.createSpy('$spyName$').and.callFake(function(){&#10;    var deferred = $q.defer();&#10;    deferred.resolve();&#10;    return deferred.promise;&#10;});" description="Create a spy with a blank promise" toReformat="true" toShortenFQNames="true">
     <variable name="spyName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="Bash" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="true" />
-      <option name="JSX_HTML" value="true" />
-      <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
 </templateSet>

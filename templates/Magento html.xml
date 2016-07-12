@@ -2,23 +2,18 @@
   <template name="translate" value="&lt;?php echo $this-&gt;__('$WORD$')?&gt;$END$" toReformat="false" toShortenFQNames="true">
     <variable name="WORD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="echothis" value="&lt;?php echo $this-&gt;$FUNC$?&gt;$END$" description="Echo something out" toReformat="false" toShortenFQNames="true">
     <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
   <template name="translates" value="&lt;?php echo $this-&gt;__('$SELECTION$')?&gt;$END$" description="Surround some text in a translate" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>

@@ -4,16 +4,13 @@
     <variable name="first" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="second" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="TypeScript" value="false" />
     </context>
   </template>
   <template name="la" value="layout-align=&quot;$first$ $second$&quot;" description="Layout-align" toReformat="true" toShortenFQNames="true">
     <variable name="first" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="second" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
