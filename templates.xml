@@ -7,6 +7,10 @@
           <option name="groupName" value="AngularJS " />
           <option name="key" value="ngc" />
         </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="AngularJS " />
+          <option name="key" value="ngm" />
+        </TemplateKey>
       </list>
     </option>
   </component>
