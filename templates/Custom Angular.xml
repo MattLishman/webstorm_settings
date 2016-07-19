@@ -8,9 +8,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ngs" value="import {module as $moduleName$} from './$modulePath$';&#10;&#10;export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}&#10;&#10;$moduleName$.service('$service$', $service$);&#10;" description="Angular service" toReformat="true" toShortenFQNames="true">
-    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ngs" value="export class $service$ {&#10;&#10;    static $inject = ['$inject$'];&#10;&#10;    constructor (private $inject$) {&#10;        $END$&#10;    }&#10;}" description="Angular service" toReformat="true" toShortenFQNames="true">
     <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="inject" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
