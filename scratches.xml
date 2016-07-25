@@ -12,6 +12,7 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.txt" value="TEXT" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_10.js" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_11.js" value="JavaScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_12.js" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.js" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.ts" value="TypeScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.js" value="JavaScript" />
@@ -50,5 +51,6 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.js" value="JavaScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.ts" value="TypeScript" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.js" value="JavaScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.ts" value="TypeScript" />
   </component>
 </application>
