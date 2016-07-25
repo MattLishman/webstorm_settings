@@ -1,41 +1,14 @@
 <templateSet group="JavaScript">
-  <template name="log" value="window.console.log($END$);" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="clog" value="console.log($END$);" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="func" value="function$functionName$($PARAM$) {&#10;  $END$&#10;}" description="Inserts function expression" toReformat="true" toShortenFQNames="true">
-    <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PARAM" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="IIFE" value="(function(){&#10;    $END$&#10;})();" description="AN Immediately invoked function expression" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="()=" value="() =&gt; {$END$}" description="ES6 fat arrow" toReformat="true" toShortenFQNames="true">
+  <template name="import" value="import '$path$';" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="importf" value="import {$moduleName$} from '$modulePath$';" description="TypeScript import from" toReformat="true" toShortenFQNames="true">
-    <variable name="modulePath" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="exportf" value="export {$export$} from '$exportPath$';" description="Export from" toReformat="true" toShortenFQNames="true">
-    <variable name="exportPath" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="export" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="importf" value="import {$variable$} from '$path$'" toReformat="true" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
