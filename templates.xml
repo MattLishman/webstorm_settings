@@ -1,21 +1,5 @@
 <application>
   <component name="TemplateSettings">
     <defaultShortcut shortcut="ENTER" />
-    <option name="deletedKeys">
-      <list>
-        <TemplateKey>
-          <option name="groupName" value="JavaScript" />
-          <option name="key" value="ref" />
-        </TemplateKey>
-        <TemplateKey>
-          <option name="groupName" value="AngularJS " />
-          <option name="key" value="ngc" />
-        </TemplateKey>
-        <TemplateKey>
-          <option name="groupName" value="AngularJS " />
-          <option name="key" value="ngm" />
-        </TemplateKey>
-      </list>
-    </option>
   </component>
 </application>
