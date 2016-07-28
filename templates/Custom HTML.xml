@@ -1,0 +1,10 @@
+<templateSet group="Custom HTML">
+  <template name="lay" value="layout=&quot;$direction$&quot; layout-align=&quot;$one$ $two$&quot;" toReformat="false" toShortenFQNames="true">
+    <variable name="direction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="one" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="two" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
