@@ -81,4 +81,18 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="unitservice" value="import {module as $moduleName$} from '$moduleLocation$';&#10;import {$serviceName$} from '$serviceLocation$';&#10;&#10;describe('$serviceName$', () =&gt; {&#10;&#10;    let $serviceName$: $serviceName$;&#10;&#10;    // Dependencies&#10;    let $dependency$;&#10;&#10;    let $q: ng.IQService, $rootScope: ng.IRootScopeService;&#10;&#10;    beforeEach(angular.mock.module($moduleName$.name));&#10;&#10;    beforeEach(angular.mock.module(($provide) =&gt; {&#10;&#10;        $dependency$ = {$dep$};&#10;&#10;        $provide.value('$dependency$', $dependency$);&#10;    }));&#10;&#10;    beforeEach(inject(($injector, _$q_, _$rootScope_) =&gt; {&#10;        $serviceName$ = $injector.get('$serviceName$');&#10;        $q = _$q_;&#10;        $rootScope = _$rootScope_;&#10;    }));&#10;&#10;    describe('$method$', () =&gt; {&#10;        it('should $itShould$', () =&gt; {&#10;            $END$&#10;        });&#10;    });&#10;&#10;});&#10;" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleLocation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="serviceLocation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dep" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="itShould" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
