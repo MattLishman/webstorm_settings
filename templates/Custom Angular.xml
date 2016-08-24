@@ -68,4 +68,17 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="unitcontroller" value="import {module as $moduleName$} from '$moduleLoacation$';&#10;import {$controllerName$} from '$controllerLocation$';&#10;&#10;describe('$controllerName$', () =&gt; {&#10;&#10;    // Injected globals&#10;    let $rootScope: ng.IRootScopeService,&#10;        $controller: ng.IControllerService,&#10;        $q: ng.IQService;&#10;&#10;    // Defaults&#10;    let $default$;&#10;&#10;    beforeEach(angular.mock.module($moduleName$.name));&#10;&#10;    // Globals and defaults&#10;    beforeEach(inject((_$rootScope_, _$controller_, _$q_) =&gt; {&#10;        $rootScope = _$rootScope_;&#10;        $controller = _$controller_;&#10;        $q = _$q_;&#10;&#10;        // Defaults&#10;        $default$ = $defaultValue$&#10;    }));&#10;&#10;    describe('When initialised', () =&gt; {&#10;        it('should $itShould$', () =&gt; {&#10;            $END$&#10;        });&#10;    });&#10;});&#10;" description="Unit test for a controller" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleLoacation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerLocation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="defaultValue" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="itShould" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
