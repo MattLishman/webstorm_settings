@@ -1,0 +1,8 @@
+<templateSet group="Custom JS">
+  <template name="log" value="window.console.log($END$);" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
