@@ -1,0 +1,10 @@
+<templateSet group="Custom TypeScript">
+  <template name="importf" value="import {$import$} from '$location$';" description="Import from" toReformat="true" toShortenFQNames="true">
+    <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="import" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
