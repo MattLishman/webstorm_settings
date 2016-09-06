@@ -1,5 +1,5 @@
 <templateSet group="Custom TypeScript">
-  <template name="importf" value="import {$import$} from '$location$';" description="Import from" toReformat="true" toShortenFQNames="true">
+  <template name="importf" value="import {$import$} from &quot;$location$&quot;;" description="Import from" toReformat="true" toShortenFQNames="true">
     <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="import" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
