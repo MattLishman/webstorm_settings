@@ -1,0 +1,10 @@
+<templateSet group="Custom Html">
+  <template name="lay" value="layout=&quot;$direction$&quot; layout-align=&quot;$align$ $align2$&quot; $END$" toReformat="false" toShortenFQNames="true">
+    <variable name="direction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="align" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="align2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
