@@ -1,0 +1,33 @@
+<templateSet group="Custom Jasmine">
+  <template name="it" value="it('should $should$', () =&gt; {&#10;    $END$&#10;});" toReformat="false" toShortenFQNames="true">
+    <variable name="should" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="expect" value="expect($something$).to$be$($END$);" toReformat="true" toShortenFQNames="true">
+    <variable name="something" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="be" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="spy" value="spyOn($object$, '$property$')$END$;" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="property" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="describe" value="describe('$name$', () =&gt; {&#10;&#10;    it('should $should$', () =&gt; {&#10;        $END$&#10;    }); &#10;&#10;});" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="should" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
