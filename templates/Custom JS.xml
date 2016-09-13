@@ -11,4 +11,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="IIFE" value="(function($params$){&#10;    $END$&#10;})($globals$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="globals" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
