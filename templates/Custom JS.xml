@@ -18,4 +18,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="if" value="if($condition$) {$END$}" toReformat="true" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
