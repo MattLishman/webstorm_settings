@@ -3,7 +3,9 @@
     <extensionMap>
       <mapping ext="phtml" type="HTML" />
       <mapping pattern="size-scrollbar." type="Handlebars/Mustache" />
+      <mapping pattern="size-range-extension" type="Handlebars/Mustache" />
       <mapping pattern="0" type="PLAIN_TEXT" />
+      <mapping pattern="size-range-extension.mustache" type="PLAIN_TEXT" />
       <mapping pattern="Google_Analytics_Layout" type="XML" />
       <mapping pattern="Ampersand_layout" type="XML" />
       <mapping pattern="Ampersand_ConvertDobToMinutes" type="XML" />
