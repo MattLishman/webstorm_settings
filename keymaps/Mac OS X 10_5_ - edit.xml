@@ -2,6 +2,9 @@
   <action id="Gitflow.OpenGitflowPopup">
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
+  <action id="JumpToNextChange">
+    <keyboard-shortcut first-keystroke="ctrl meta back_space" />
+  </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
   </action>
